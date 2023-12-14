@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="card">
+
+        <form action="">
+            <!--autocomplete off no longer shows that prv datas entered-->
+            <input type="text" name="" id="input" placeholder="Enter City..." autocomplete="off">
+            <button type="submit" class="searchIcon">Search</button>
+        </form>
+        <p class="error">Error! City Not Found</p>
+        <div class="noerror">
+            <div class="degrees">
+                <img src="img/clear.png" alt="" class="weatherIcon">
+                <p class="weatherType">Condition</p>
+                <p class="cityNow"><strong>Name</strong></p>
+                <p class="degreesNow">x&deg C</p>
+            </div>
+
+            <div class="otherWeather">
+                <div class="humidity">
+                    <img src="img/humidity.png" alt="">
+                    <p>Humidity</p>
+                    <p class="humidityNow">x %</p>
+                </div>
+
+                <div class="windSpeed">
+                    <img src="img/wind.png" alt="">
+                    <p>Wind Speed</p>
+                    <p class="windSpeedNow">x kmph</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
